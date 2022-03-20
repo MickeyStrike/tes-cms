@@ -1,12 +1,11 @@
 import moment from 'moment'
 import React, { useEffect, useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import Swal from 'sweetalert2'
 import { setAllDataHistoryTransaction, setDataCheckout, setDataNotification } from '../appRedux/action/actionRedux'
 import { RootReducers } from '../appRedux/reducer'
 import BaseLayout from '../components/baseLayout'
 import Table from '../components/table'
-import { Columns, DataCheckout, DataHistoryTransaction, DataProduct } from '../interfaces/interface'
+import { Columns, DataCheckout, DataHistoryTransaction } from '../interfaces/interface'
 
 const Checkout:React.FC = () => {
 
